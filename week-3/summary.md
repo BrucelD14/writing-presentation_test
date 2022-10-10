@@ -68,7 +68,7 @@ berikut contoh array multidimensi:
     ];
 ```
 
-## Object & Array of Object
+## Javascript Intermediate - Object & Array of Object
 
 Array of object merupakan data data object yang berada di dalam array, berikut contohnya:
 
@@ -89,4 +89,31 @@ Array of object merupakan data data object yang berada di dalam array, berikut c
     ];
 
     console.log(flowerGarden);
+```
+
+## Javascript Intermediate - Rekursif
+
+Rekursif adalah function yang memanggil dirinya sendiri terus menerus sampai pada kondisi tertentu.
+
+berikut struktur rekursif:
+
+```js
+    function rekursif(){
+        // kode lainnya
+        rekursif()
+    }
+```
+
+dan contoh rekursif sebagai berikut:
+
+```js
+    function faktorial(n) {
+        if(n == 1) {
+            return 1;
+        }else{
+            return n * faktorial(n-1);
+        }
+    }
+
+    console.log(faktorial(4));
 ```
