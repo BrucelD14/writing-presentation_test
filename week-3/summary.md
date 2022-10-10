@@ -117,3 +117,92 @@ dan contoh rekursif sebagai berikut:
 
     console.log(faktorial(4));
 ```
+
+## Javascript Intermediate - Modules
+
+Module adalah sebuah cara bagi Javascript untuk mengisolasi kode dari suatu file ke dalam sebuah file terpisah, sehingga kode tersebut dapat digunakan berulang kali dengan cara di export dari suatu file dan di import ke file lainnya.
+
+Untuk membuat module pada direktori lokal kita bisa menggunakan cara berikut:
+
+```js
+    <script type="module" src="index.js"></script>
+```
+
+contoh export dan import:
+
+```js
+    // export
+    export let orang = {
+    nama: "Thoriq",
+    umur: 25,
+    alamat: "Jl. Kemang Raya"
+};
+
+    //import dari user.js
+    import {orang} from "./user.js";
+```
+
+## Javascript Intermediate - Asynchronous - Introduction
+
+Asynchronous atau non-blocking adalah proses yang mengizinkan komputer kita untuk memproses perintah lain sambil menunggu suatu proses lain yang berlangsung.
+
+Berikut contoh asynchronous menggunakan setTimeout();
+
+```js
+    setTimeout(() => {
+    console.log("Cuci baju"); // proses asynchronous
+    }, 1000);
+    console.log("Menyapu");
+    console.log("Mengepel");
+    console.log("Memasak");
+
+    // 1000 ms = 1 second
+
+    // Output:
+    // Menyapu
+    // Mengepel
+    // Memasak
+    // Cuci baju 
+```
+
+## Javascript Intermediate - Asynchronous - Promise
+
+contoh penggunaan promise:
+
+```js
+    const condition = true;
+
+    let newPromise = new Promise((resolve, reject) => {
+    if (condition) {
+    // apa yang dilakukan jika promise 'fulfilled'
+    resolve("Berhasil");
+    } else {
+    // apa yang dilakukan jika promise 'rejected'
+    reject(new Error("Error Gagal"));
+    }
+    });
+
+    newPromise.then((result) => {
+    console.log(result); // Output: "Berhasil"
+    });
+```
+
+## Javascript Intermediate - Web Storage
+
+Ada beberapa cara untuk menyimpan data pengguna seperti pencarian, artikel berita, dan lain lain ke lokal (browser) menggunakan web storage seperti cookies, local storage dan session storage.
+
+Cookies adalah data kecil yang dikirim dari situs web dan disimpan di komputer kita oleh web browser saat kita menjelajah. Disebut data kecil karena maksimum data yang dapat disimpan dalam cookies adalah 4096 bytes (4 KB).
+
+Dengan memanfaatkan local storage dan session storage, kita dapat menyimpan data lebih besar yaitu 5MB per page tanpa mempengaruhi kinerja situs web. 
+
+Untuk menyimpan data di local storage kita bisa menggunakan method setItem(), strukturnya seperti berikut:
+
+```js
+    localStorage.setItem('key', value);
+```
+
+kita juga bisa mengambil data yang kita simpan menggunakan method getItem(), seperti berikut:
+
+```js
+    localStorage.getItem('key');
+```
