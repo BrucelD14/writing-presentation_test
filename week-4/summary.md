@@ -68,3 +68,58 @@ Berikut contoh penggunaan *async*:
 
 ## Git & GitHub Lanjutan
 
+### Branch
+
+Branch adalah sebuah cabang dari repository. Branch digunakan untuk mengembangkan fitur tanpa mengganggu branch utama. Branch juga digunakan untuk mengembangkan fitur baru secara bersamaan.
+
+### Merge
+
+Merge adalah sebuah proses untuk menggabungkan branch yang berbeda. Merge hanya dapat dilakukan jika branch yang akan digabungkan memiliki parent.
+
+### Merge Conflict
+
+Merge coflict adalah sebuah kondisi dimana branch yang akan digabungkan memiliki parent yang berbeda. Merge conflict bisa diatasi dengan cara menghapus kode yang tidak diperlukan.
+
+### Pull Request
+
+Pull request adalah sebuah proses untuk menggabungkan branch yang berbeda. Pull request dilakukan di github.
+
+### Checkout 
+
+git checkout adalah perintah untuk mengganti branch head yang ada pada git local.
+
+***
+
+## Responsive Web Design
+
+Responsive web design adalah design web yang dapat menyesuaikan ukuran layar yang digunakan pada device yang digunakan oleh user. Responsive web design dapat dibuat menggunakan CSS.
+
+### Media Query
+
+Media query adalah sebuah kode CSS yang dapat menyesuaikan ukuran layar yang digunakan untuk membuat responsive web design.
+
+### Mobile First
+
+Mobile first adalah sebuah design web yang memprioritaskan penggunaan layar mobile.
+
+### Desktop First
+
+Desktop first adalah sebuah desain web yang memprioritaskan penggunaan layar dekstop.
+
+### Breakpoint
+
+Breakpoint adalah sebuah titik dimana media query akan berjalan.
+
+Contoh penggunaan media query
+
+```css
+    @media (max-width: 600px) {
+        body {
+            background-color: lightcoral;
+        }
+    }
+```
+
+## Bootstrap 5
+
+
