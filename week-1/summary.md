@@ -203,6 +203,11 @@ Disini sebagai contoh kita akan menggunakan visual studio code. Untuk mendownloa
 > - menggunakan metode responsive web design menggunakan CSS
 > - menggunakan flexbox
 
+CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mendesain halaman website. Dengan CSS kita bisa mengubah warna, jenis font dan tata letak element HTML.
+
+Di dalam CSS ada yang namanya konsep Flexbox. Flexbox adalah cara untuk mengatur layout. Penggunaan Flexbox direkomendasikan karena penggunaannya yang mudah dan didukung oleh kebanyakan browser.
+
+
 # **Algoritma**
 
 > - perbedaan antara Algoritma dan Data Structures
